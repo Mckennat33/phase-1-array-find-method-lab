@@ -1,19 +1,23 @@
 
- function superbowlWin(array) {
-     array.result === "W"
-     return array.year;
-     }
-    
-     record.find(superbowlWin)
-
-
+ function superbowlWin(record) {
      
-     // let x = record.find(superbowlWin)
+     const x = record.find(r => r.result === "W")
+     
+     return x ? x.year : undefined 
+    
+}
  
+ 
+    // let x = record.find(superbowlWin)
+ 
+ //      record.find(superbowlWin)
       // record.filter(superbowlWin);
 
-   //  var x = record.find(x => x.result === "W")
-    
+      // array.result === "W"
+//      return array.year;
+//     }
+
+
 // const winner = superbowlWin();   
 
  // record.find(x => x.result === "W")
